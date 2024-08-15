@@ -208,7 +208,41 @@ body {
   cursor: pointer;
 }
 
+/* 响应式图片 */
+.img-box img {
+  width: 100%;
+  height: auto;
+}
 
+/* 确保标题和按钮在小屏幕上可读 */
+.title p {
+  font-size: 2rem; /* 根据需要调整大小 */
+}
+
+/* 媒体查询：手机尺寸 */
+@media (max-width: 768px) {
+  .title p {
+    font-size: 1.5rem; /* 手机标题大小 */
+  }
+
+  /* 调整按钮大小，使其在手机上更容易点击 */
+  .btn-group .btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* 调整图片盒子的间距和大小 */
+  .img-box {
+    margin-right: 1rem; /* 减小间距 */
+  }
+
+  /* 其他需要调整的元素 */
+}
+
+/* 媒体查询：平板尺寸 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* 平板设备的样式调整 */
+}
 @-webkit-keyframes admission {
   0% {
     -webkit-transform: translate(140vw, 0);
